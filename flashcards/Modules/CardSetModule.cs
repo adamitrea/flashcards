@@ -11,10 +11,10 @@ namespace flashcards.Modules
 				return View["learn"];
 			};
 
-			//Post["/learn"] = parameters =>
-			//{
-			//	return View["learn"];
-			//};
+			Post["/learn"] = parameters =>
+			{
+				return View["learn"];
+			};
 		}
 	}
 }
