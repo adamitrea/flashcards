@@ -120,7 +120,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\FlashCards.Domain\FlashCards.Domain.csproj">
+      <Project>{d95e0eed-e9ff-41c3-b0f7-552482532b51}</Project>
+      <Name>FlashCards.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FlashCards.Persistence\FlashCards.Persistence.csproj">
+      <Project>{a4c47fcb-aff6-4db4-a37c-4b21a812b3dc}</Project>
+      <Name>FlashCards.Persistence</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
