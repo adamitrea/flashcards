@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FlashCards.Domain
+namespace flashcards.domain
 {
-    public class Class1
-    {
-    }
+	public interface IPathProvider
+	{
+		string GetRootPath();
+	}
 }
