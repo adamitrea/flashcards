@@ -1,14 +1,18 @@
-﻿using Nancy;
+﻿using flashcards.domain;
+using Nancy;
+using System.Dynamic;
 
 namespace flashcards.Modules
 {
 	public class IndexModule : NancyModule
 	{
-		public IndexModule()
+		public dynamic Model = new ExpandoObject();
+		public IndexModule(ICardSetRepository cardSetRepo)
 		{
 			Get["/"] = parameters =>
 			{
-				return View["index"];
+				Model.Sets = cardSetRepo.LoadAll();
+				return View["index",Model];
 			};
 		}
 	}

@@ -23,19 +23,18 @@
 		<div class="card">
 			<ul class="table-view">
 				<li class="table-view-cell table-view-divider">Cards</li>
-				@for (int i = 0; i < 3; i++)
+				@foreach (var set in Model.Sets)
 				{
 					<li class="table-view-cell media">
-						<a class="navigate-right" href="/cardset/learn" data-transition="slide-in">
+						<a class="navigate-right" href="@(string.Format("/cardset/{0}/learn", set.Id))" data-transition="slide-in">
 							<img class="media-object pull-left" src="http://placehold.it/64x64" alt="Placeholder image">
 							<div class="media-body">
-								Card set name
-								<p>Card set description</p>
+								@set.Name
+								<p>@set.Description</p>
 							</div>
 						</a>
 					</li>
 				}
-
 			</ul>
 		</div>
 	</div>

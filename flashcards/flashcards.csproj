@@ -105,6 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bootstrapper.cs" />
+    <Compile Include="Infrastructure\PathProvider.cs" />
     <Compile Include="Modules\CardSetModule.cs" />
     <Compile Include="Modules\IndexModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -113,6 +114,8 @@
     <Content Include="packages.config" />
     <Content Include="Views\index.cshtml" />
     <Content Include="Views\CardSet\learn.cshtml" />
+    <Content Include="Data\data.json" />
+    <Content Include="Data\test.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

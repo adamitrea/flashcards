@@ -6,12 +6,12 @@ namespace flashcards.Modules
 	{
 		public CardSetModule() : base("/cardset")
 		{
-			Get["/learn"] = parameters =>
+			Get["/{id}/learn"] = parameters =>
 			{
 				return View["learn"];
 			};
 
-			Post["/learn"] = parameters =>
+			Post["/{id}/learn"] = parameters =>
 			{
 				return View["learn"];
 			};

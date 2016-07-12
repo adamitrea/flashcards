@@ -1,0 +1,22 @@
+﻿{
+	"Id": 1,
+	"Name": "Java Classes and Objects",
+	"Description": "Covering Classes and Objects in Java.",
+	"Cards": [
+		{
+			"Id": 1,
+			"Question": "What is the basic syntax for declaring a class?",
+			"Answer": "class MyClass { <br/>//field, constructor, and method declarations<br/>}"
+		},
+		{
+			"Id": 2,
+			"Question": "What is the difference between the public modifier and the private modifier?",
+			"Answer": "public modifier—the field is accessible from all classes. <br/><br/> private modifier—the field is accessible only within its own class."
+		},
+		{
+			"Id": 3,
+			"Question": "Primitive arguments, such as an int or a double, are passed into methods by value. When the method returns, what happens to the changes to these values?",
+			"Answer": "They are lost."
+		}
+	]
+}
