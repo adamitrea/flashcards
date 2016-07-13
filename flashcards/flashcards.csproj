@@ -96,6 +96,7 @@
   <ItemGroup>
     <Content Include="Content\css\ratchet.min.css" />
     <Content Include="Content\css\Style.css" />
+    <Content Include="Content\fonts\ratchicons.svg" />
     <Content Include="Content\js\ratchet.min.js" />
     <Content Include="Content\nancy-logo.png" />
     <Content Include="icon.png" />
@@ -116,6 +117,9 @@
     <Content Include="Views\CardSet\learn.cshtml" />
     <Content Include="Data\data.json" />
     <Content Include="Data\test.json" />
+    <Content Include="Content\fonts\ratchicons.eot" />
+    <Content Include="Content\fonts\ratchicons.ttf" />
+    <Content Include="Content\fonts\ratchicons.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
