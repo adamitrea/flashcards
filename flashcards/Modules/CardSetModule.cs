@@ -1,5 +1,6 @@
 ﻿using flashcards.domain;
 using Nancy;
+using System;
 using System.Dynamic;
 using System.Linq;
 
@@ -27,11 +28,11 @@ namespace flashcards.Modules
 				int setId = parameters.id;
 
 				CardSet cardSet = cardSetRepo.Load(parameters.id);
-				int nextCardId = int.Parse(this.Request.Form.cardid) + 1;
+				int nextCardIndex = (int) Math.Floor(new Random().NextDouble()*(cardSet.Cards.Count()));
 
 				//chose next card
 				Model.Set = cardSet;
-				Model.Card = cardSet.Cards.FirstOrDefault(card => card.Id == nextCardId) ?? cardSet.Cards.First();
+				Model.Card = cardSet.Cards.Skip(nextCardIndex).FirstOrDefault();
 
 				return View["learn", Model];
 			};
