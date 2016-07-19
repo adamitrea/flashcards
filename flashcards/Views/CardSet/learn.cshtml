@@ -19,23 +19,32 @@
 	</header>
 
 	<div class="bar bar-footer">
+
 		<form method="post">
 
-			<button class="btn btn-positive pull-left">
+			<input type="hidden" value="@Model.Card.Id" name="cardId" />
+
+			<button class="btn btn-positive pull-left" type="submit" value="1" name="answerCorrect">
 				Correct
 			</button>
 
-			<button class="btn btn-negative pull-right">
+			<button class="btn btn-negative pull-right" type="submit" value="0" name="answerCorrect">
 				Incorrect
 			</button>
 		</form>
 	</div>
 
-	<div class="content-padded">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-		Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+	<div class="content content-flash" ontouchstart="this.classList.toggle('flipped');">
+		<div class="flash">
+			<div class="front">
+				@Html.Raw(Model.Card.Question)
 
+			</div>
+			<div class="back">
+				@Html.Raw(Model.Card.Answer)
+			</div>
+		</div>
 	</div>
+
 </body>
 </html>

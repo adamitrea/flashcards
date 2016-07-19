@@ -1,2 +1,28 @@
 ﻿body {
 }
+
+.content-flash {
+	padding-bottom: 94px !important;
+}
+
+
+	.content-flash .flash > div {
+		margin: 22px;
+		padding: 22px;
+	}
+
+	.content-flash .front {
+		display: block;
+	}
+
+	.content-flash .back {
+		display: none;
+	}
+
+	.content-flash.flipped .front {
+		display: none;
+	}
+
+	.content-flash.flipped .back {
+		display: block;
+	}
