@@ -1,0 +1,22 @@
+﻿{
+	"Id": 4,
+	"Name": "Literatura",
+	"Description": "Literatura romaneasca in perioada interbelica",
+	"Cards": [
+		{
+			"Id": 1,
+			"Question": "Cine a scris romanul Ion?",
+			"Answer": "Liviu Rebreanu"
+		},
+		{
+			"Id": 2,
+			"Question": "Cine este protagonistul cartii <Ultima noapte de dragoste, intaia noapte de razboi> de Camil Petrescu?",
+			"Answer": "Stefan Ghiorghidiu"
+		},
+		{
+			"Id": 3,
+			"Question": "In ce perioada are loc actiunea din cartea <Padurea Spanzuratilor>?",
+			"Answer": "Primul Razboi Mondial"
+		}
+	]
+}

@@ -120,6 +120,9 @@
     <Content Include="Content\fonts\ratchicons.eot" />
     <Content Include="Content\fonts\ratchicons.ttf" />
     <Content Include="Content\fonts\ratchicons.woff" />
+    <Content Include="Data\istorie.json" />
+    <Content Include="Data\literatura.json" />
+    <Content Include="Data\fizica.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,0 +1,27 @@
+﻿{
+	"Id": 5,
+	"Name": "Fizica",
+	"Description": "fizica termodinamica",
+	"Cards": [
+		{
+			"Id": 1,
+			"Question": "Care este ecuatia de stare a gazului ideal??",
+			"Answer": "P*V=(niu)*R*T"
+		},
+		{
+			"Id": 2,
+			"Question": "Care este valoarea numerica a valorii lui Boltzmann?",
+			"Answer": "1,38*10^-23"*
+		},
+    {
+      "Id": 3,
+      "Question": "Cum se calculeaza valoarea randamentului?",
+      "Answer": "util/consumat"
+    }
+    {
+			"Id": 4,
+			"Question": "Care este valoarea cantitatii de caldura degajata in transformarea adiabatica?",
+			"Answer": "0"
+		}
+	]
+}

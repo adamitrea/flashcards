@@ -1,0 +1,22 @@
+﻿{
+	"Id": 3,
+	"Name": "Istoria Artei",
+	"Description": "Arta in perioada 1450-1700",
+	"Cards": [
+		{
+			"Id": 1,
+			"Question": "Ce nationalitate era Vermeer?",
+			"Answer": "olandez"
+		},
+		{
+			"Id": 2,
+			"Question": "In ce oras este inmormantat Michelangelo?",
+			"Answer": "Florenta"
+		},
+		{
+			"Id": 3,
+			"Question": "Cine a proiectat domul catedralei Santa Maria del Fiore din Florenta?",
+			"Answer": "Filippo Brunelleschi"
+		}
+	]
+}
